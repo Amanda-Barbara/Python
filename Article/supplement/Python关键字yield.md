@@ -1,3 +1,5 @@
+# [yield生成器](https://www.runoob.com/w3cnote/python-yield-used-analysis.html)
+
 > 原文：http://stackoverflow.com/questions/231767/the-python-yield-keyword-explained
 >
 > 注：这是一篇 stackoverflow 上一个火爆帖子的译文
