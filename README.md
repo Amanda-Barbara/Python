@@ -61,7 +61,7 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
   - [字典(Dictionary)](./Article/PythonBasis/python4/Dict.md)
   - [set](./Article/PythonBasis/python4/Set.md)
 * [numpy数据类型](./Article/PythonBasis/python17/Preface.md)
-  - [clip函数](./Article/PythonBasis/python17/1.md)
+  - [numpy常规函数使用](./Article/PythonBasis/python17/1.md)
 * [条件语句和循环语句](./Article/PythonBasis/python5/Preface.md)
   - [条件语句](./Article/PythonBasis/python5/If.md)
   - [循环语句](./Article/PythonBasis/python5/Cycle.md)
