@@ -60,6 +60,7 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
 * [ Dict 和 Set](./Article/PythonBasis/python4/Preface.md)
   - [字典(Dictionary)](./Article/PythonBasis/python4/Dict.md)
   - [set](./Article/PythonBasis/python4/Set.md)
+  - [`__init__(*args, **kwargs)`](./Article/PythonBasis/python4/param.md)
 * [numpy数据类型](./Article/PythonBasis/python17/Preface.md)
   - [numpy常规函数使用](./Article/PythonBasis/python17/1.md)
 * [条件语句和循环语句](./Article/PythonBasis/python5/Preface.md)
