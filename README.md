@@ -145,7 +145,7 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
 * [contextlib上下文管理](./Article/advanced/contextlib上下文管理.md)
 * [lambda匿名函数](./Article/advanced/lambda匿名函数.md)
 * [map函数](./Article/advanced/map函数.md)
-
+ 
 # Python 设计模式
 
 
