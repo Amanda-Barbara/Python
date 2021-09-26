@@ -33,29 +33,32 @@ a = np.array([[0, 1, 2],
               [6, 7, 8],
               [9, 10, 11]])
 print(a.shape)
-print(a[1:2, 1:3])
-print(a[1:2, [1, 2]])
-
-a = np.array([10, 40, 80, 50, 100])
-print(a[a>50])
-# [80 100]
-
-a = np.array([10, 40, 80, 50, 100])
-print(a[a%40==0]**2)
-# [1600 6400]
-
-
-b = np.array([[5, 5],
-              [4, 5],
-              [16, 4]])
-sumrow = b.sum(1) # 按行求和，求取的结果的行数与b的行数一致，
-print(sumrow)
-print(sumrow%10==0)
-print(b[sumrow%10==0])
-
-# @矩阵乘法
-np.array([[1, 2], [3, 4]]) @ np.array([[1, 2], [3, 4]])
-# array([[ 7, 10],
-#        [15, 22]])
-
-print(*[f'{x}_curve.png' for x in ('F1', 'PR', 'P', 'R')])
+# print(a[1:2, 1:3])
+# print(a[1:2, [1, 2]])
+print(a[:2]) # 按照原始数据的排列格式返回0:1行的所有元素，
+#
+# a = np.array([10, 40, 80, 50, 100])
+# print(a[a>50])
+# # [80 100]
+#
+# a = np.array([10, 40, 80, 50, 100])
+# print(a[a%40==0]**2)
+# # [1600 6400]
+#
+#
+# b = np.array([[5, 5],
+#               [4, 5],
+#               [16, 4]])
+# sumrow = b.sum(1) # 按行求和，求取的结果的行数与b的行数一致，
+# print(sumrow)
+# print(sumrow%10==0)
+# print(b[sumrow%10==0])
+#
+# # @矩阵乘法
+# np.array([[1, 2], [3, 4]]) @ np.array([[1, 2], [3, 4]])
+# # array([[ 7, 10],
+# #        [15, 22]])
+#
+# print(*[f'{x}_curve.png' for x in ('F1', 'PR', 'P', 'R')])
+#
+# print(np.array([[1,2],[3,4]]) @ np.array([[1,2],[3,4]]) @ np.array([[1,2],[3,4]]))
