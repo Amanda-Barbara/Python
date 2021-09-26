@@ -53,4 +53,9 @@ print(sumrow)
 print(sumrow%10==0)
 print(b[sumrow%10==0])
 
+# @矩阵乘法
+np.array([[1, 2], [3, 4]]) @ np.array([[1, 2], [3, 4]])
+# array([[ 7, 10],
+#        [15, 22]])
+
 print(*[f'{x}_curve.png' for x in ('F1', 'PR', 'P', 'R')])
