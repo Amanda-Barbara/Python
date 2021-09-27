@@ -8,7 +8,7 @@ a = np.array([[0, 1, 2, 3, 4, 5],
 
 print("\n a[2::2, ::2]=\n", a[2::2, ::2])
 
-print("\n a[2::2, ::-1]=\n", a[2::2, ::-1]) # ::-1表示从最后一列开始往前数，
+print("\n a[2::2, ::-1]=\n", a[2::2, ::-1]) # ::-1表示数组a按照从最后一列开始往前的顺序进行排列
 
 # A 3 dimensional array.
 # ellipsis index operator
