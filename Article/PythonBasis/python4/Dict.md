@@ -193,7 +193,27 @@ print(dict1)
 |popitem()|随机返回并删除字典中的一对键和值|
 |dict.items()|以列表返回可遍历的(键, 值) 元组数组|
 
+## get()方法
+* Python 字典(Dictionary) get() 函数返回指定键的值
+```python
+dict.get(key, default=None)
+```
+* 返回指定键的值，如果键不在字典中返回默认值 None 或者设置的默认值。
+```python
+#!/usr/bin/python
 
+dict = {'Name': 'Runoob', 'Age': 27}
+
+print "Value : %s" %  dict.get('Age')
+print "Value : %s" %  dict.get('Sex', "Not Available")
+print dict.get('with_net', True)
+```
+输出结果是
+```text
+Value : 27
+Value : Not Available
+True
+```
 
 
 
