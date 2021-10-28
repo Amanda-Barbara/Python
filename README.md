@@ -130,7 +130,7 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
 * [闭包](./Article/PythonBasis/python15/1.md)
 * [装饰器](./Article/PythonBasis/python16/1.md)
 * [python内置函数](./Article/PythonBasis/python18/1.md)
-
+* [python内置属性](./Article/PythonBasis/python18/2.md)
 
 
 # 知识点补漏
