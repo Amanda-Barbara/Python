@@ -92,6 +92,7 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
   - [类的继承](./Article/PythonBasis/python8/7.md)
   - [类的多态](./Article/PythonBasis/python8/8.md)
   - [类的访问控制](./Article/PythonBasis/python8/9.md)
+  - [面向对象设计的案例分享](./Article/PythonBasis/python8/10.md)
 * [模块与包](./Article/PythonBasis/python9/Preface.md)
   - [Python 模块简介](./Article/PythonBasis/python9/1.md)
   - [模块的使用](./Article/PythonBasis/python9/2.md)
