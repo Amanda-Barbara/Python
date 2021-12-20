@@ -41,7 +41,7 @@ class ConcreteProductB(Product):
         print(self.__class__.__name__)
 
 
-class Creator(object):
+class Creator(metaclass=ABCMeta):
     """
     声明了工厂方法, 该方法返回一个Product类型的对象
     """
@@ -66,11 +66,12 @@ class ConcreteCreatorB(Creator):
 
 
 if __name__ == '__main__':
-    factory_a = ConcreteCreatorA()
-    product = factory_a.create()
-    product.echo()
+    for i in range(100000000):
+        factory_a = ConcreteCreatorA()
+        product = factory_a.create()
+        product.echo()
 
-    factory_b = ConcreteCreatorB()
-    product = factory_b.create()
-    product.echo()
+        factory_b = ConcreteCreatorB()
+        product = factory_b.create()
+        product.echo()
 
