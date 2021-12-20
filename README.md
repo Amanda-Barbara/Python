@@ -152,6 +152,7 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
  
 # Python 设计模式
 * [常见设计模式](./Patterns/README.md)
+* [抽象接口的设计样例](./Patterns/InterfaceDesign/REDEME.md)
 
 # Python 第三方库
 
