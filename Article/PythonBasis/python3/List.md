@@ -266,3 +266,20 @@ print(newUser)
 ![list的使用](http://upload-images.jianshu.io/upload_images/2136918-65d31cae9f8bb34d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
+* extend()函数的使用方法
+```python
+#!/usr/bin/python
+
+aList = [123, 'xyz', 'zara', 'abc', 123];
+bList = [2009, 'manni'];
+aList.extend(bList)
+
+print "Extended List : ", aList ;
+```
+输出结果
+```text
+Extended List :  [123, 'xyz', 'zara', 'abc', 123, 2009, 'manni']
+```
+
+## 参考链接
+* 1 [extend使用方法](https://www.runoob.com/python/att-list-extend.html)
