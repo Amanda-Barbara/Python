@@ -214,10 +214,26 @@ Value : 27
 Value : Not Available
 True
 ```
+## update方法
+* Python 字典(Dictionary) update() 函数把字典dict2的键/值对更新到dict里
+```shell
+#!/usr/bin/python
+
+tinydict = {'Name': 'Zara', 'Age': 7}
+tinydict2 = {'Sex': 'female' }
+
+tinydict.update(tinydict2)
+print "Value : %s" %  dict
+```
+```text
+Value : {'Age': 7, 'Name': 'Zara', 'Sex': 'female'}
+```
 
 
 ## 参考链接
 * 1 [dict的get()方法使用](https://www.runoob.com/python/att-dictionary-get.html)
+* 2 [update方法](https://www.runoob.com/python/att-dictionary-update.html)
+
 
 
 
