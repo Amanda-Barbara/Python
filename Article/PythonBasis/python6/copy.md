@@ -4,3 +4,7 @@
 [执行程序](./src/deepcopy_test.py)
 
 * [深拷贝和浅拷贝](https://www.runoob.com/w3cnote/python-understanding-dict-copy-shallow-or-deep.html)
+
+
+## 参考链接
+* 1 [深拷贝和浅拷贝](https://blog.csdn.net/qq_26442553/article/details/82218403)

@@ -73,7 +73,7 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
   - [函数的参数](./Article/PythonBasis/python6/3.md)
   - [函数传值问题](./Article/PythonBasis/python6/4.md)
   - [匿名函数](./Article/PythonBasis/python6/5.md)
-  - [对象的深拷贝和浅拷贝](./Article/PythonBasis/python6/6.md)
+  - [对象的深拷贝和浅拷贝](Article/PythonBasis/python6/copy.md)
 * [迭代器和生成器](./Article/PythonBasis/python7/Preface.md)
   - [迭代](./Article/PythonBasis/python7/1.md)
   - [Python 迭代器](./Article/PythonBasis/python7/2.md)
