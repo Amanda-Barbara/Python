@@ -157,6 +157,7 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
 # Python 第三方库
 
 * [ArgumentParser模块](ThirdLib/ArgumentParser/README.md)
+* [matplotlib模块](ThirdLib/matplotlib/README.md)
 
 
 
