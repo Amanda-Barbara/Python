@@ -158,6 +158,7 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
 
 * [ArgumentParser模块](ThirdLib/ArgumentParser/README.md)
 * [matplotlib模块](ThirdLib/matplotlib/README.md)
+* [collections模块](https://www.liaoxuefeng.com/wiki/1016959663602400/1017681679479008)
 
 
 
