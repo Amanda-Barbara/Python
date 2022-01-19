@@ -281,5 +281,11 @@ print "Extended List : ", aList ;
 Extended List :  [123, 'xyz', 'zara', 'abc', 123, 2009, 'manni']
 ```
 
+* list使用运算符`+`进行拼接
+```python
+[0, 0] + [1] * 3
+```
+输出是`[0, 0, 1, 1, 1]`
+
 ## 参考链接
 * 1 [extend使用方法](https://www.runoob.com/python/att-list-extend.html)
