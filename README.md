@@ -106,6 +106,7 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
   - [对象的描述器](./Article/PythonBasis/python10/4.md)
   - [自定义容器（Container）](./Article/PythonBasis/python10/5.md)
   - [__setitem__魔术方法](./Article/PythonBasis/python10/5.md)
+  - [__missing__魔术方法](./Article/PythonBasis/python10/5.md)
   - [运算符相关的魔术方法](./Article/PythonBasis/python10/6.md)
   - [`__future__`](./Article/PythonBasis/python10/7.md)
   - [`__all__`](./Article/PythonBasis/python10/8.md)
