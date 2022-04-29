@@ -12,6 +12,11 @@
 python3 ./init_test.py
 ```
 
+## 类对象可以在程序中添加自定义对象变量
+```shell
+python3 ./init_test.py
+```
+
 ## 参考链接
 * 1 [args与kwargs的区别](https://www.cnblogs.com/yunguoxiaoqiao/p/7626992.html)
 * 2 [**kwargs把键值传递给函数的形参使用](https://www.cnblogs.com/cwind/p/8996000.html)

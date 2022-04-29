@@ -18,3 +18,7 @@ if __name__ == '__main__':
     print(user.age)
     user.addr = 'beijing'
     print(user.get_addr(''))
+    user.category = 'obj'
+    user.id = 123
+    print(user.category)
+    print(user.id)
