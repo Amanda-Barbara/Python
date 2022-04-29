@@ -43,7 +43,44 @@ if __name__ == '__main__':
 
 
 ## yaml.add_constructor 和 yaml.add_representer函数
-* 
+* 你可能在使用过程中并不想通过上面这种元类的方式，而是想定义正常的类，那么，可以用这两种方法
+```python
+import yaml
+
+class Person(object):
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def __repr__(self):
+        return 'Person(%s, %s)' % (self.name, self.age)
+
+james = Person('James', 20)
+print (yaml.dump(james))  # 没加表示器之前
+
+def person_repr(dumper, data):
+    return dumper.represent_mapping(u'!person', {"name": data.name, "age": data.age})  # mapping表示器，用于dict
+
+yaml.add_representer(Person, person_repr)  # 用add_representer方法为对象添加表示器
+print (yaml.dump(james))  # 加了表示器之后
+
+def person_cons(loader, node):
+    value = loader.construct_mapping(node)  # mapping构造器，用于dict
+    name = value['name']
+    age = value['age']
+    return Person(name, age)
+
+yaml.add_constructor(u'!person', person_cons)  # 用add_constructor方法为指定yaml标签添加构造器
+lily = yaml.load('!person {name: Lily, age: 19}')
+print (lily)
+
+# 输出
+# !!python/object:__main__.Person {age: 20, name: James}
+# !person {age: 20, name: James}
+# Person(Lily, 19)
+
+```
+* 加了表示器之后，变成了规范的格式，下面添加了构造器，能够把 !person 标签转化为Person对象
 
 ## 参考链接
 * 1 [PyYAML官方文档教程](https://pyyaml.org/wiki/PyYAMLDocumentation)
