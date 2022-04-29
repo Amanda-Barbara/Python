@@ -162,6 +162,7 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
 * [matplotlib模块](ThirdLib/matplotlib/README.md)
 * [collections模块](ThirdLib/collections/README.md)
 * [inspect模块](ThirdLib/inspect/README.md)
+* [yaml模块](ThirdLib/yaml/README.md)
 
 # HTML 和 CSS 入门
 
