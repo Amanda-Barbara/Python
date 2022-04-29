@@ -228,7 +228,20 @@ print "Value : %s" %  dict
 ```text
 Value : {'Age': 7, 'Name': 'Zara', 'Sex': 'female'}
 ```
-
+## `items方法`
+* dict.items()返回可遍历的(键, 值)元组数组
+```python
+#!/usr/bin/python
+# coding=utf-8
+ 
+tinydict = {'Google': 'www.google.com', 'Runoob': 'www.runoob.com', 'taobao': 'www.taobao.com'}
+ 
+print("字典值 : %s" %  tinydict.items())
+ 
+# 遍历字典列表
+for key,values in  tinydict.items():
+    print(key,values)
+```
 
 ## 参考链接
 * 1 [dict的get()方法使用](https://www.runoob.com/python/att-dictionary-get.html)
