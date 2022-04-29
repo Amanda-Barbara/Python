@@ -7,6 +7,11 @@
     pdr = ObjectDetection(labels_info=labels_info1) #使用**kwargs格式接受参数
 ```
 
+## 类的成员变量可以在类的成员函数中进行声明和初始化，在对象中也可以访问和修改
+```shell
+python3 ./init_test.py
+```
+
 ## 参考链接
 * 1 [args与kwargs的区别](https://www.cnblogs.com/yunguoxiaoqiao/p/7626992.html)
 * 2 [**kwargs把键值传递给函数的形参使用](https://www.cnblogs.com/cwind/p/8996000.html)
