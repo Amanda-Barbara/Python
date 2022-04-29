@@ -6,6 +6,8 @@ except ImportError:
 
 
 if __name__ == '__main__':
+    stream = file('document.yaml', 'w')
+
     document = """
       a: 1
       b:

@@ -58,6 +58,23 @@ Python 中基本数据类型转换的方法有下面几个。
 
 其余的方法就不一一列举了，只要多用，多试，这些方法都会慢慢熟悉的。还有如果是初学者，完全可以每个方法都玩一下，写一下，随便写，然后运行看结果，反正你的电脑又不会因为这样而玩坏的。
 
+## `__repr__`
+* 通过 str() 的输出结果我们能很好地知道 now 实例的内容，但是却丢失了 now 实例的数据类型信息。
+  而通过 repr() 的输出结果我们不仅能获得 now 实例的内容，还能知道 now 是 datetime.datetime 
+  对象的实例。
+```python
+from datetime import datetime
+now = datetime.now()
+print(str(now))
+# 2017-04-22 15:41:33.012917
+print(repr(now))
+# datetime.datetime(2017, 4, 22, 15, 41, 33, 12917)
+```
+
+
+## 参考链接
+* 1 [__str__与__repr__的不同点](https://www.jianshu.com/p/2a41315ca47e)
+
 
 
 
