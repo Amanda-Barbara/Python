@@ -43,6 +43,7 @@ if __name__ == '__main__':
 
 
 ## yaml.add_constructor 和 yaml.add_representer函数
+* 通过yaml.add_constructor、yaml.add_representer分别向yaml注册cls类的序列化(load:yaml对象转为python对象)，反序列化(dump:python对象转为yaml对象)的功能表单
 * 你可能在使用过程中并不想通过上面这种元类的方式，而是想定义正常的类，那么，可以用这两种方法
 ```python
 import yaml
