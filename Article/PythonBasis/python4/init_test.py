@@ -2,6 +2,7 @@
 # -*- coding: UTF-8 -*-
 
 class User(object):
+    name1 = 'zjw'
     def __init__(self, name, age):
         self.name = name
         self.age = age
@@ -14,7 +15,9 @@ class User(object):
         return self.addr
 
 if __name__ == '__main__':
+    print(User.name1)
     user = User('两点水', 23)
+    print(user.name1)
     print(user.name)
     print(user.age)
     user.addr = 'beijing'

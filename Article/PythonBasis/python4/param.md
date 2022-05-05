@@ -16,6 +16,12 @@ python3 ./init_test.py
 ```shell
 python3 ./init_test.py
 ```
+## 类变量和类的成员变量
+* name1是类变量，可以由类名直接调用， 也可以有对象来调用，
+  成员变量一定是以self.的形式给出的，因为self的含义就是代表实例对象
+```shell
+python ./init_test.py
+```
 
 ## 参考链接
 * 1 [args与kwargs的区别](https://www.cnblogs.com/yunguoxiaoqiao/p/7626992.html)
