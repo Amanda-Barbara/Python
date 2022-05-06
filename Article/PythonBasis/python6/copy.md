@@ -2,6 +2,9 @@
 
 ## 对象的深拷贝和浅拷贝以及直接赋值
 * 直接赋值相当于对象的引用
+
+![](./images/copy.png)
+
 ```python
 #!/usr/bin/python
 # -*-coding:utf-8 -*-
