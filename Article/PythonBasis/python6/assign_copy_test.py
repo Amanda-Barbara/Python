@@ -16,3 +16,16 @@ print('a = ', a)
 print('b = ', b)
 print('c = ', c)
 print('d = ', d)
+
+print('*'*30)
+
+d1 = dict(one=1, two=2)
+d1['thr'] = {'t' : 3}
+d1['four'] = 4
+sub3 = d1['thr']
+sub3['t'] = 8
+print(d1)
+sub4 = d1['four'] #如果d1['four']只是一个普通变量，sub4则相当于深拷贝
+sub4 = 9
+print(sub4)
+print(d1)

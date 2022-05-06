@@ -30,6 +30,19 @@ print( 'd = ', d )
 
 * [深拷贝和浅拷贝](https://www.runoob.com/w3cnote/python-understanding-dict-copy-shallow-or-deep.html)
 
+## 对于字典的直接赋值案例
+* `dict_merge(dct[k], merge_dct[k])`
+```text
+d1 = dict(one=1, two=2)
+d1['thr'] = {'t' : 3}
+d1['four'] = 4
+sub3 = d1['thr']
+sub3['t'] = 8
+print(d1)
+sub4 = d1['four']
+sub4 = 9
+print(sub4)
+```
 
 ## 参考链接
 * 1 [深拷贝和浅拷贝](https://blog.csdn.net/qq_26442553/article/details/82218403)
