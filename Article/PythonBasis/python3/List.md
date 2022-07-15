@@ -287,5 +287,10 @@ Extended List :  [123, 'xyz', 'zara', 'abc', 123, 2009, 'manni']
 ```
 输出是`[0, 0, 1, 1, 1]`
 
+## `list`与`Sequence`的区别
+```text
+A list is a sequence but a sequence is not necessarily a list. A sequence is any type
+```
+
 ## 参考链接
 * 1 [extend使用方法](https://www.runoob.com/python/att-list-extend.html)
