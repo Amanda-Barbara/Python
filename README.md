@@ -163,6 +163,10 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
 * [collections模块](ThirdLib/collections/README.md)
 * [inspect模块](ThirdLib/inspect/README.md)
 * [yaml模块](ThirdLib/yaml/README.md)
+* [typing类型注解模块](ThirdLib/yaml/README.md)
+
+# Python 标准库
+* [Python3.10中文版标准库](https://docs.python.org/zh-cn/3/library/index.html)
 
 # HTML 和 CSS 入门
 
