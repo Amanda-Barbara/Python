@@ -49,7 +49,16 @@ class LoggedVar(Generic[T]):
     def log(self, message: str) -> None:
         self.logger.info('%s: %s', self.name, message)
 ```
+* `Generic[T]` 是定义类 `LoggedVar` 的基类，该类使用单类型参数 `T`。在该类体内，`T` 是有效的类型。`Generic` 基类定义了 `__class_getitem__()` ，
+因此，`LoggedVar[t]` 也是有效类型：
+```python
+from collections.abc import Iterable
 
+def zero_all_vars(vars: Iterable[LoggedVar[int]]) -> None:
+    for var in vars:
+        var.set(0)
+
+```
 ## 参考链接
 * 1 [python3.7的typing教程](https://docs.python.org/zh-cn/3.7/library/typing.html)
 * 2 [python3.10的typing教程](https://docs.python.org/zh-cn/3/library/typing.html)
