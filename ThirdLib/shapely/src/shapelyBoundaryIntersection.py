@@ -25,23 +25,19 @@ ax.add_patch(patch1)
 patch2 = PolygonPatch(b, fc=GRAY, ec=GRAY, alpha=0.2, zorder=1)
 ax.add_patch(patch2)
 d = a.intersection(b)
-# d = a.boundary.intersection(b.boundary)
-d = a.intersection(b)
-patchd = PolygonPatch(d, fc=BLUE, ec=BLUE, alpha=0.5, zorder=2)
-ax.add_patch(patchd)
-# coords = [((0, 0), (1, 1)), ((-1, 0), (1, 0))]
-# lines = MultiLineString(((d[0].x, d[0].y), (d[1].x, d[1].y)),)
-print(d.length)
+d = a.boundary.intersection(b.boundary)
+# d = a.intersection(b)
+# patchd = PolygonPatch(d, fc=BLUE, ec=BLUE, alpha=0.5, zorder=2)
+# ax.add_patch(patchd)
+# print(d.length)
 x = []
 y = []
-for polygon in d:
-    xe, ye = polygon.exterior.coords.xy
-    x += [x.append(coordx) for coordx in xe]
-    y += [y.append(coordy) for coordy in ye]
-
+for point in d:
+    x.append(point.x)
+    y.append(point.y)
 pyplot.plot(x, y, color="red", linewidth=0.5, linestyle="-", label="circle")
-ax.set_title('a.intersection(b)')
-# ax.set_title('a.boundary.intersection(b.boundary)')
+# ax.set_title('a.intersection(b)')
+ax.set_title('a.boundary.intersection(b.boundary)')
 pyplot.xlim([-1, 3])
 pyplot.ylim([-1, 3])
 ax.set_aspect(1)
