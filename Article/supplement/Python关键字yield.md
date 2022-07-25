@@ -293,5 +293,61 @@ def read_file(fpath):
                 return
 ```
 
+```python
+import numpy as np
+from paddle.io import IterableDataset
+
+# define a random dataset
+class RandomDataset(IterableDataset):
+    def __init__(self, num_samples):
+        self.num_samples = num_samples
+
+    def __iter__(self):
+        for i in range(self.num_samples):
+            image = np.random.random([784]).astype('float32')
+            label = np.random.randint(0, 9, (1, )).astype('int64')
+            yield image, label
+
+dataset = RandomDataset(10)
+for img, lbl in dataset:
+    print(img, lbl)
+
+
+def _accumulate(iterable, fn=lambda x, y: x * y):
+    """
+    Return running totals
+    
+    Args:
+        iterable: any iterable object for example dataset.
+        y (x): one element in the iterable object.
+        fn (x, y): Defaults to lambdax.
+
+    Yields:
+        yields total from beginning iterator to current iterator.
+
+    Example code:
+    
+        .. code-block:: python
+        
+            _accumulate([1,2,3,4,5]) --> 1 3 6 10 15
+            _accumulate([1,2,3,4,5], operator.mul) --> 1 2 6 24 120
+    """
+#把list、dict、str等Iterable变成Iterator可以使用iter()函数，例如for c in iter('abc'):
+    it = iter(iterable) 
+    try:
+        total = next(it)
+    except StopIteration:
+        return
+    yield total
+    for element in it:
+        total = fn(total, element)
+        yield total
+
+
+if __name__ == "__main__":
+    for i in _accumulate([1,2,3,4,5]):
+        print(i)
+```
 ## 参考链接
 * 1 [yield使用浅析](https://www.runoob.com/w3cnote/python-yield-used-analysis.html)
+* 2 [Iterable可迭代对象的解释](https://www.liaoxuefeng.com/wiki/1016959663602400/1017323698112640)
