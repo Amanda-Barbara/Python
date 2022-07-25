@@ -158,12 +158,13 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
 
 # Python 第三方库
 
-* [ArgumentParser模块](ThirdLib/ArgumentParser/README.md)
-* [matplotlib模块](ThirdLib/matplotlib/README.md)
-* [collections模块](ThirdLib/collections/README.md)
-* [inspect模块](ThirdLib/inspect/README.md)
-* [yaml模块](ThirdLib/yaml/README.md)
-* [typing类型注解模块](ThirdLib/typing/README.md)
+* [`ArgumentParser`参数解析模块](ThirdLib/ArgumentParser/README.md)
+* [`matplotlib`图形显示模块](ThirdLib/matplotlib/README.md)
+* [`collections`基类设计模块](ThirdLib/collections/README.md)
+* [`inspect`类型判别模块](ThirdLib/inspect/README.md)
+* [`yaml`配置参数模块](ThirdLib/yaml/README.md)
+* [`typing`类型注解模块](ThirdLib/typing/README.md)
+* [`shapely`几何图形模块教程](ThirdLib/shapely/README.md)
 
 # Python 标准库
 * [Python3.10中文版标准库](https://docs.python.org/zh-cn/3/library/index.html)

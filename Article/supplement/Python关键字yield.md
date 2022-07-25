@@ -279,3 +279,19 @@ itertools 包含了很多特殊的迭代方法。是不是曾想过复制一个�
 **了解迭代器的内部机理**
 
 迭代是一个实现可迭代对象(实现的是 `__iter__()` 方法)和迭代器(实现的是 `__next__()` 方法)的过程。可迭代对象是你可以从其获取到一个迭代器的任一对象。迭代器是那些允许你迭代可迭代对象的对象。
+
+* yield 的例子来源于文件读取。如果直接对文件对象调用 read() 方法，会导致不可预测的内存占用。好的方法是利用固定长度的缓冲区来不断读取文件内容。
+```python
+def read_file(fpath): 
+    BLOCK_SIZE = 1024 
+    with open(fpath, 'rb') as f: 
+        while True: 
+            block = f.read(BLOCK_SIZE) 
+            if block: 
+                yield block 
+            else: 
+                return
+```
+
+## 参考链接
+* 1 [yield使用浅析](https://www.runoob.com/w3cnote/python-yield-used-analysis.html)
