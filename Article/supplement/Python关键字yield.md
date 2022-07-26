@@ -348,6 +348,8 @@ if __name__ == "__main__":
     for i in _accumulate([1,2,3,4,5]):
         print(i)
 ```
+
+* 
 ## 参考链接
 * 1 [yield使用浅析](https://www.runoob.com/w3cnote/python-yield-used-analysis.html)
 * 2 [Iterable可迭代对象的解释](https://www.liaoxuefeng.com/wiki/1016959663602400/1017323698112640)
