@@ -349,7 +349,18 @@ if __name__ == "__main__":
         print(i)
 ```
 
-* 
+* `yield`中途返回，下一次程序遍历则从上一次中途返回后的第一条语句开始执行
+```python
+    def __iter__(self):
+        batch_indices = []
+        for idx in self.sampler:
+            batch_indices.append(idx)
+            if len(batch_indices) == self.batch_size:
+                yield batch_indices #返回batch_indices结果
+                batch_indices = [] #下一次遍历从此语句开始执行
+        if not self.drop_last and len(batch_indices) > 0:
+            yield batch_indices
+```
 ## 参考链接
 * 1 [yield使用浅析](https://www.runoob.com/w3cnote/python-yield-used-analysis.html)
 * 2 [Iterable可迭代对象的解释](https://www.liaoxuefeng.com/wiki/1016959663602400/1017323698112640)
