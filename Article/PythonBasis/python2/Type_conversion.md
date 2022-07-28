@@ -60,8 +60,7 @@ Python 中基本数据类型转换的方法有下面几个。
 
 ## `__repr__`
 * 通过 str() 的输出结果我们能很好地知道 now 实例的内容，但是却丢失了 now 实例的数据类型信息。
-  而通过 repr() 的输出结果我们不仅能获得 now 实例的内容，还能知道 now 是 datetime.datetime 
-  对象的实例。
+  而通过 repr() 的输出结果我们不仅能获得 now 实例的内容，还能知道 now 是 datetime.datetime 类型对象的实例。
 ```python
 from datetime import datetime
 now = datetime.now()

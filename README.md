@@ -165,6 +165,7 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
 * [`yaml`配置参数模块](ThirdLib/yaml/README.md)
 * [`typing`类型注解模块](ThirdLib/typing/README.md)
 * [`shapely`几何图形模块教程](ThirdLib/shapely/README.md)
+* [`opencv`图像处理模块教程](ThirdLib/opencv/README.md)
 
 # Python 标准库
 * [Python3.10中文版标准库](https://docs.python.org/zh-cn/3/library/index.html)
