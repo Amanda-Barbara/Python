@@ -3,8 +3,13 @@
 
 ## [`cv2.threshold`](https://www.bilibili.com/video/BV1PV411774y?p=9&vd_source=df8b73f15b5a0311fd8a1646ccd07daf)函数对图像设置阈值参数进行过滤操作
 
-## 
+## [`cv2.erode`图像腐蚀操作](https://www.bilibili.com/video/BV1PV411774y?p=12&vd_source=df8b73f15b5a0311fd8a1646ccd07daf)
+* `kernel_size`大小的卷积核对二值图像进行滑动窗口卷积操作，做完卷积后的矩阵中只要有一个元素值为0，则这一块被卷积的区域则置0处理。
 
+## [`cv2.dilate`图像膨胀操作](https://www.bilibili.com/video/BV1PV411774y?p=12&vd_source=df8b73f15b5a0311fd8a1646ccd07daf)
+* `kernel_size`大小的卷积核对二值图像进行滑动窗口卷积操作，做完卷积后的矩阵中只要有一个元素值为0，则这一块被卷积的区域则置1处理。
+
+## 
 
 ## 参考链接
 * 1 [`opencv`视频教程](https://www.bilibili.com/video/BV1PV411774y?p=9&vd_source=df8b73f15b5a0311fd8a1646ccd07daf)
