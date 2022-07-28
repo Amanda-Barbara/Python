@@ -66,6 +66,10 @@ blackhat_joint = np.hstack((blackhat, blackhat2))
 ## `Laplacian`算子求每一个像素位置的“二阶导”
 ![](opencv_tutorial/data/LaplacianFormula.png)
 
+## `cv2.Canny`边缘检测
+* 双阈值检测是指如果像素梯度值在[minVal,maxVal]中，则进一步判断此该像素的连通域的像素梯度值是否有超过maxVal值的，如果没有则舍弃，有则保留。
+
+
 ## 参考链接
 * 1 [`opencv`视频教程](https://www.bilibili.com/video/BV1PV411774y?p=9&vd_source=df8b73f15b5a0311fd8a1646ccd07daf)
 * 2 [`opencv`视频教程代码](https://github.com/Amanda-Barbara/opencv_tutorial)
