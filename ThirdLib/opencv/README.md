@@ -57,8 +57,14 @@ blackhat_joint = np.hstack((blackhat, blackhat2))
 ```
 * 执行[14_top_hat.py](opencv_tutorial/14_top_hat.py)查看结果
 
-## ![计算梯度方向](opencv_tutorial/data/gradient_direction.png)
+## 计算梯度方向
 * 注意Gx与Gy是对应位置元素相乘的结果，而不是矩阵相乘。
+
+![](opencv_tutorial/data/gradient_direction.png)
+
+
+## `Laplacian`算子求每一个像素位置的“二阶导”
+![](opencv_tutorial/data/LaplacianFormula.png)
 
 ## 参考链接
 * 1 [`opencv`视频教程](https://www.bilibili.com/video/BV1PV411774y?p=9&vd_source=df8b73f15b5a0311fd8a1646ccd07daf)
