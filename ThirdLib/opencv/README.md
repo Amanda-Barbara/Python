@@ -1,6 +1,22 @@
 # `opencv`图像处理教程
 * OpenCV是一个基于BSD许可（开源）发行的跨平台计算机视觉和机器学习软件库， 它轻量级而且高效——由一系列 C 函数和少量 C++ 类构成。
 
+## `opencv`矩形坐标与宽高的公式计算
+```text
+1 . 2 . 3 . 4
+.  
+2 
+.
+3
+x1=1,y1=1,w=3,h=2,x2=4,y2=3
+得出如下公式：
+x2 = x1 + w
+y2 = y1 + h
+进而得出如下公式：
+w = x2 - x1
+h = y2 - y1
+```
+
 ## [`cv2.threshold`](https://www.bilibili.com/video/BV1PV411774y?p=9&vd_source=df8b73f15b5a0311fd8a1646ccd07daf)函数对图像设置阈值参数进行过滤操作
 
 ## [`cv2.erode`图像腐蚀操作](https://www.bilibili.com/video/BV1PV411774y?p=12&vd_source=df8b73f15b5a0311fd8a1646ccd07daf)
