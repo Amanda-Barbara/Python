@@ -7,7 +7,10 @@ python 的虚拟环境可以为一个 python 项目提供独立的解释环境�
 **安装 virtualenv**
 
 ```
-$ pip install virtualenv
+pip install virtualenv
+python3 -m venv alphastar
+source alphastar/bin/activate
+pip install --upgrade pip setuptools wheel
 ```
 
 
