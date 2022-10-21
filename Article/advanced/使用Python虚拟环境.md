@@ -18,6 +18,15 @@ pip install --upgrade pip setuptools wheel
 
 我们都知道，国内连接国外的服务器都会比较慢，有时候设置下载经常出现超时的情况。这时可以尝试使用国内优秀的[豆瓣源](https://pypi.douban.com/simple)镜像来安装。
 
+```text
+https://pypi.douban.com/simple/ 豆瓣
+https://mirrors.aliyun.com/pypi/simple/ 阿里
+https://pypi.hustunique.com/simple/ 华中理工大学
+https://pypi.sdutlinux.org/simple/ 山东理工大学
+https://pypi.mirrors.ustc.edu.cn/simple/ 中国科学技术大学
+https://pypi.tuna.tsinghua.edu.cn/simple 清华
+https://mirror.baidu.com/pypi/simple/ 百度
+```
 使用豆瓣源安装 virtualenv
 
 ```
