@@ -4,6 +4,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/Patterns" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/ThirdLib/opencv/opencv_tutorial" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ThirdLib/opencv/src/Harris-Corner-Detection-and-SIFT-Keypoint-Matching" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/py-patterns" vcs="Git" />
   </component>
 </project>

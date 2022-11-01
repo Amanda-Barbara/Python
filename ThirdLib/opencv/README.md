@@ -115,6 +115,29 @@ blackhat_joint = np.hstack((blackhat, blackhat2))
 
 ## [`kmeans`](https://docs.opencv.org/3.4/d1/d5c/tutorial_py_kmeans_opencv.html)
 ![](src/kmeansTest.py)
+
+
+
+## [图像的矩阵变换](https://docs.opencv.org/4.x/da/d6e/tutorial_py_geometric_transformations.html)
+
+### 仿射变换[](https://docs.opencv.org/4.x/da/d54/group__imgproc__transform.html#ga0203d9ee5fcd28d40dbc4a1ea4451983)
+* 仿射变换公式
+![](data/%E4%BB%BF%E5%B0%84%E5%8F%98%E6%8D%A2%E5%85%AC%E5%BC%8F.png)
+
+* 仿射变换公式特例
+![](data/%E4%BB%BF%E5%B0%84%E5%8F%98%E6%8D%A2%E7%9A%84%E7%89%B9%E4%BE%8B.png)
+
+* 仿射变换范例
+![](data/%E4%BB%BF%E5%B0%84%E5%8F%98%E6%8D%A2%E8%8C%83%E4%BE%8B.jpg)
+
+### 透视变换[](https://docs.opencv.org/4.x/da/d54/group__imgproc__transform.html#gaf73673a7e8e18ec6963e3774e6a94b87)
+* 透视变换公式
+![](data/%E9%80%8F%E8%A7%86%E5%8F%98%E6%8D%A2%E5%85%AC%E5%BC%8F.png)
+
+* 透视变换范例
+![](data/%E9%80%8F%E8%A7%86%E5%8F%98%E6%8D%A2%E8%8C%83%E4%BE%8B.jpg)
+
+
 ## 参考链接
 * 1 [`opencv`视频教程](https://www.bilibili.com/video/BV1PV411774y?p=9&vd_source=df8b73f15b5a0311fd8a1646ccd07daf)
 * 2 [`opencv`视频教程代码](https://github.com/Amanda-Barbara/opencv_tutorial)
