@@ -56,17 +56,17 @@ class ManagerModel(object):
         return self._dict.get(proto_name)
 
 if __name__ == '__main__':
-    for i in range(100000000):
+    for i in range(100):
         # factory_a = CreatorYoloV4()
         # product = factory_a.create()
         # product.echo()
 
-        factory_b = CreatorYoloV5()
-        product = factory_b.create()
-        product.echo()
+        # factory_b = CreatorYoloV5()
+        # product = factory_b.create()
+        # product.echo()
 
         m = ManagerModel()
-        m.register("yolov5", product)
+        # m.register("yolov5", product)
 
         x = m.create("yolov5")
         x.echo()
