@@ -119,13 +119,19 @@ blackhat_joint = np.hstack((blackhat, blackhat2))
 
 
 ## [图像的矩阵变换](https://docs.opencv.org/4.x/da/d6e/tutorial_py_geometric_transformations.html)
+* 图像中的两条平行线经过放射变换之后依然保持平行关系，若经过透视变换后两条直线之前的平行关系不一定保持。
+* 仿射变换的矩阵$M$大小是2x3，$M = \begin{bmatrix}  m_{11}& m_{12}  & m_{13} \\  m_{21}& m_{22}& m_{23} \end{bmatrix}$,需要三个不同的坐标点才能计算出矩阵$M$
+透视变换的矩阵$M$大小是3x3，$M = \begin{bmatrix}  m_{11}& m_{12}  & m_{13} \\  m_{21}& m_{22}& m_{23} \\  m_{31}& m_{32}& m_{33} \end{bmatrix}$,需要四个不同的坐标点才能计算出矩阵$M$
+* 仿射变换与透视变换都是在同一个坐标系经过矩阵$M$的线性变换而得，并在原坐标系下显示。
 
 ### 仿射变换[](https://docs.opencv.org/4.x/da/d54/group__imgproc__transform.html#ga0203d9ee5fcd28d40dbc4a1ea4451983)
 * 仿射变换公式
 ![](data/%E4%BB%BF%E5%B0%84%E5%8F%98%E6%8D%A2%E5%85%AC%E5%BC%8F.png)
 
-* 仿射变换公式特例
+* 仿射变换公式特例，旋转、平移、缩放公式可由极坐标转换推导而得。
 ![](data/%E4%BB%BF%E5%B0%84%E5%8F%98%E6%8D%A2%E7%9A%84%E7%89%B9%E4%BE%8B.png)
+
+![](data/%E4%BA%8C%E7%BB%B4%E7%9F%A9%E9%98%B5%E6%97%8B%E8%BD%AC%E5%85%AC%E5%BC%8F%E6%8E%A8%E5%AF%BC.png)
 
 * 仿射变换范例
 ![](data/%E4%BB%BF%E5%B0%84%E5%8F%98%E6%8D%A2%E8%8C%83%E4%BE%8B.jpg)
