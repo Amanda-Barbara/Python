@@ -60,10 +60,10 @@ def seg_intersection(a1, a2, b1, b2):
     :return: intersection point between segments a and b. If no intersection exists returns [nan, nan] as point.
     """
     # Convert to numpy types
-    a1 = np.array(a1, dtype=np.float)
-    a2 = np.array(a2, dtype=np.float)
-    b1 = np.array(b1, dtype=np.float)
-    b2 = np.array(b2, dtype=np.float)
+    a1 = np.array(a1, dtype=np.float32)
+    a2 = np.array(a2, dtype=np.float32)
+    b1 = np.array(b1, dtype=np.float32)
+    b2 = np.array(b2, dtype=np.float32)
 
     intersection = [np.NaN, np.NaN]
 
@@ -140,10 +140,10 @@ def seg_intersection_line(s1, s2, l1, l2):
     :return: intersection point between segments a and b. If no intersection exists returns [nan, nan] as point.
     """
     # Convert to numpy types
-    s1 = np.array(s1, dtype=np.float)
-    s2 = np.array(s2, dtype=np.float)
-    l1 = np.array(l1, dtype=np.float)
-    l2 = np.array(l2, dtype=np.float)
+    s1 = np.array(s1, dtype=np.float32)
+    s2 = np.array(s2, dtype=np.float32)
+    l1 = np.array(l1, dtype=np.float32)
+    l2 = np.array(l2, dtype=np.float32)
 
     intersection = [np.NaN, np.NaN]
 
@@ -272,12 +272,13 @@ def midpoint(a, b):
 if __name__ == "__main__":
     # Testing line intersection
     p1 = np.array([0.0, 0.0])
-    p2 = np.array([1.0, 1.0])
+    p2 = np.array([2.0, 2.0])
 
     p3 = np.array([1.0, 3.0])
     p4 = np.array([2.0, 1.0])
 
     print("Line intersection: ", line_intersection(p1, p2, p3, p4))
+    print("seg_intersection:", seg_intersection(p1, p2, p3, p4))
 
     # Testing line intersection (boolean)
     print("Line intersects?: ", line_intersects(p1, p2, p3, p4))
