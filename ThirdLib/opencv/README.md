@@ -19,6 +19,58 @@ h = y2 - y1
 
 ## [`cv2.threshold`](https://www.bilibili.com/video/BV1PV411774y?p=9&vd_source=df8b73f15b5a0311fd8a1646ccd07daf)函数对图像设置阈值参数进行过滤操作
 
+## `OTSU算法原理`[](http://giantpandacv.com/academic/%E4%BC%A0%E7%BB%9F%E5%9B%BE%E5%83%8F/%E4%B8%80%E4%BA%9B%E6%9C%89%E8%B6%A3%E7%9A%84%E5%9B%BE%E5%83%8F%E7%AE%97%E6%B3%95/OpenCV%E5%9B%BE%E5%83%8F%E5%A4%84%E7%90%86%E4%B8%93%E6%A0%8F%E5%8D%81%E4%B9%9D%20%20%E6%89%8B%E5%8A%A8%E5%AE%9E%E7%8E%B0%E5%9F%BA%E4%BA%8ECanny%E7%AE%97%E5%AD%90%E7%9A%84%E8%BE%B9%E7%BC%98%E6%A3%80%E6%B5%8B/)
+* `OTSU`算法流程
+
+![](data/otsu%E4%BA%8C%E5%80%BC%E5%8C%96%E7%AE%97%E6%B3%95%E6%B5%81%E7%A8%8B.PNG)
+
+
+* `OTSU`算法代码实现
+```c++
+int OTSU(Mat src){
+    int row = src.rows;
+    int col = src.cols;
+    int PixelCount[256]={0};
+    float PixelPro[256]={0};
+    int total_Pixel = row * col;
+    float threshold = 0;
+    //统计灰度级中每个像素在整副图中的个数
+    for(int i = 0; i < row; i++){
+        for(int j = 0; j < col; j++){
+            PixelCount[src.at<int>(i, j)]++;
+        }
+    }
+    //计算每个像素在整副图中的个数
+    for(int i = 0; i < 256; i++){
+        PixelPro[i] = (float)(PixelCount[i]) / (float)(total_Pixel);
+    }
+    //遍历灰度级[0,255]，计算出方差最大的灰度值，为最佳阈值
+    float w0, w1, u0tmp, u1tmp, u0, u1, u, deltaTmp, deltaMax = 0;
+    for(int i = 0; i < 256; i++){
+        w0 = w1 = u0tmp = u1tmp = u0 = u1 = u = deltaTmp = 0;
+        for(int j = 0; j < 256; j++){
+            if(j <= i){//以i为阈值分类，第一类总的概率
+                w0 += PixelPro[j];
+                u0tmp += j * PixelPro[j];
+            }else{//前景部分
+                w1 += PixelPro[j];
+                u1tmp += j * PixelPro[j];
+            }
+        }
+        u0 = u0tmp / w0; //第一类的平均灰度
+        u1 = u1tmp / w1; //第二类的平均灰度
+        u = u0 + u1; //整副图像的平均灰度
+        //计算类间方差
+        deltaTmp = w0 * (u0 - u) * (u0 - u) + w1 * (u1 - u) * (u1 - u);
+        //找出最大类间方差以及对应阈值
+        if(deltaTmp > deltaMax){
+            deltaMax = deltaTmp;
+            threshold = i;
+        }
+    }
+    return threshold;
+}
+```
 ## [`cv2.erode`图像腐蚀操作](https://www.bilibili.com/video/BV1PV411774y?p=12&vd_source=df8b73f15b5a0311fd8a1646ccd07daf)
 * `kernel_size`大小元素值为1的卷积核对原图像进行滑动窗口卷积操作，做完卷积后的矩阵中只要有一个元素值为0，则这一块被卷积的区域则置0处理。
 

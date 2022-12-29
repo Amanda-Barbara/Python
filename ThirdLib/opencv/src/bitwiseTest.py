@@ -14,16 +14,16 @@ circle = np.zeros((300, 300), dtype="uint8")
 cv2.circle(circle, (150, 150), 150, 255, -1)
 # cv2.imshow("Circle", circle)
  
-# 按位与操作AND
+# 按位与操作AND，取交集
 bitwiseAnd = cv2.bitwise_and(rectangle, circle)
 # cv2.imshow("AND", bitwiseAnd)
 
-# 按位或操作OR
+# 按位或操作OR，取并集
 bitwiseOr = cv2.bitwise_or(rectangle, circle)
 # cv2.imshow("OR", bitwiseOr)
 
  
-# 按位异或XOR
+# 按位异或XOR，取并集后再去掉交集
 bitwiseXor = cv2.bitwise_xor(rectangle, circle)
 # cv2.imshow("XOR", bitwiseXor)
  

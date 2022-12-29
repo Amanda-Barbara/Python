@@ -153,7 +153,7 @@ def decompose_homography(G, K):
 
     # Check if H is a rotation matrix
     if (cv2.norm(S, cv2.NORM_INF) < epsilon):
-        print "H is a rotation matrix"
+        print ("H is a rotation matrix")
 
     # M00, M11, M22
     M00 = opposites_of_minors(S, 0, 0)
@@ -317,7 +317,7 @@ def calculate_homography(image1, image2, K,
         err = np.sqrt(np.square(calc_pt[0] - pts2[i][0]) \
                       + np.square(calc_pt[1] - pts2[i][1]))
         tot_err += err
-    print "\nAverage Reprojection error: " + str(tot_err / len(pts1))
+    print ("\nAverage Reprojection error: " + str(tot_err / len(pts1)))
 
     R1, R2, t = decompose_homography(G, K)
     R, t = check_solutions(pts1, pts2, K, R1, R2, t)
