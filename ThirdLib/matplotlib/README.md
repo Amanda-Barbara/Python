@@ -26,5 +26,8 @@ images = {'Image'+str(i): np.random.rand(100, 100) for i in range(total_images)}
 display_multiple_img(images, 2, 2)
 ```
 
+## [plt绘制的图像转换为`numpy`格式](src/plt2numpy.py)
+
 ## 参考链接
 * 1 [subplots绘制多个图像](https://www.delftstack.com/zh/howto/matplotlib/how-to-display-multiple-images-in-one-figure-correctly-in-matplotlib/)
+* 2 [plt绘制的图像转换为numpy](https://stackoverflow.com/questions/7821518/matplotlib-save-plot-to-numpy-array)
