@@ -169,7 +169,7 @@ IT 行业相对于一般传统行业，发展更新速度更快，一旦停止�
 * [`logging`日志模块教程](ThirdLib/logging/README.md)
 * [`threading`多线程模块教程](ThirdLib/threading/README.md)
 * [`numpy`数值计算模块](ThirdLib/numpy/README.md)
-
+* [`timeit`程序执行计时模块](ThirdLib/timeit/README.md)
 
 # Python 标准库
 * [Python3.10中文版标准库](https://docs.python.org/zh-cn/3/library/index.html)
