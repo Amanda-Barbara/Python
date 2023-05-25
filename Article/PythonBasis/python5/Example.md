@@ -42,4 +42,12 @@ else:
 
 ```
 
+## 打印转义字符
+* 比如要打印字符串`mod["AddOne"](10)`，其中字符串中有“"”的转义字符，则需要加上转义字符的前面加上转义字符的标识符“\”
+```python
+print("mod[\"AddOne\"](10)=", mod["AddOne"](10))
+print("mod[\"SubOne\"](10)=", mod["SubOne"](10))
+print("mymod[\"mul\"](10)=", mymod["mul"](10))
+```
+
 
